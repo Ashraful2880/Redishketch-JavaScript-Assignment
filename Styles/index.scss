@@ -1,0 +1,169 @@
+// Color Variable Here
+
+$header-bgColor: #01123a;
+$footer-bgColor: #000;
+$whiteColor: #fff;
+$redColor: red;
+$blueColor: #00b1ff;
+
+// Browser Reset Code Here
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+// Common Style Here
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    padding: 0px 5%;
+}
+
+// Header Style Here
+
+header {
+    background-color: $header-bgColor;
+}
+
+// Navbar Style Here
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: $whiteColor;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        display: flex;
+
+        a {
+            font-size: 18px;
+            color: $whiteColor;
+            text-decoration: none;
+            margin: 0px 5px;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: ease-in-out 0.2s;
+        }
+
+        a:hover {
+            background-color: $whiteColor;
+            color: $redColor;
+        }
+    }
+}
+
+// Main Basic Style Here
+
+main {
+    min-height: 80vh;
+    text-align: center;
+}
+
+// Login Page Style Here
+
+.loginbg {
+    position: relative;
+}
+
+.loginbg img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: opacity 1.5s ease-in;
+}
+
+.loginbg img+img {
+    opacity: 0;
+}
+
+#slider-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.inputContainer {
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inputContainer p {
+    color: $whiteColor;
+}
+
+.head {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.inputDiv {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.inputDiv p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    color: $whiteColor;
+    width: 70%;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid $blueColor;
+    background-color: $blueColor;
+    border: 1px solid $blueColor;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.submitBtn:hover {
+    background: transparent;
+    color: $blueColor;
+}
+
+// Footer Style Here
+footer {
+    color: $whiteColor;
+    text-align: center;
+    background-color: $footer-bgColor;
+    padding: 50px;
+}

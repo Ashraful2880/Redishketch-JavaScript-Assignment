@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/dashboard.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <div>
+                <h4>My Bos</h4>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <a href="./login.html">Login</a>
+                        <a href="./dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="dashboard-section">
+        <section class="nav-container">
+            <div>
+                <a href="/index.html" aria-label="forecastr logo" class="dashboardLink">
+                    <h2 class="dashboardLogo">MY BOS</h2>
+                    <img class="dashboardImg" src="./Images/Dashboard.png" alt="Office">
+                    <h4>Arch</h4>
+                    <p class="address">200 George St,Sydney NSW 2000</p>
+                </a>
+                <ul class="dashboard-menu">
+                    <li>
+                        <a href="#">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Cases</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Work Order Sent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Maintenance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Building</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Residents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Keys</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Parcels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Contractors</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Covid-19 Track</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="page-content">
+            <div class="grid">
+                <div class="sectionHead">
+                    <ul>
+                        <li>
+                            <a href="#">Community</a>
+                        </li>
+                        <li>
+                            <a href="#">Broadcast</a>
+                        </li>
+                        <li>
+                            <a href="#">Shift Log</a>
+                        </li>
+                        <li>
+                            <a href="#">Lobby Screen</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sectionHead">
+                    <input class="searchArea" type="text" placeholder="Search Here">
+                </div>
+                <div class="sectionHead">3</div>
+            </div>
+            <section class="grid">
+                <article class="wrapper">
+                    <div class="container-calendar">
+                        <div class="arrow-container">
+                            <button id="previous" onclick="previous()">&#8249;</button>
+                            <h3 id="monthAndYear"></h3>
+                            <button id="next" onclick="next()">&#8250;</button>
+                        </div>
+                        <table class="table-calendar" id="calendar" data-lang="en">
+                            <thead id="thead-month"></thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+                        <div class="footer-container-calendar">
+                            <select id="year" onchange="jump()"></select>
+                            <select id="month" onchange="jump()">
+                                <option value=0>Jan</option>
+                                <option value=1>Feb</option>
+                                <option value=2>Mar</option>
+                                <option value=3>Apr</option>
+                                <option value=4>May</option>
+                                <option value=5>Jun</option>
+                                <option value=6>Jul</option>
+                                <option value=7>Aug</option>
+                                <option value=8>Sep</option>
+                                <option value=9>Oct</option>
+                                <option value=10>Nov</option>
+                                <option value=11>Dec</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+                <article>2</article>
+                <article>3</article>
+                <article>4</article>
+                <article>5</article>
+                <article>6</article>
+                <article>7</article>
+                <article>8</article>
+                <article>9</article>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Copyright &copy; My Bos All Rights Reserved</p>
+    </footer>
+    <script src="./Script/dashboard.js"></script>
+</body>
+
+</html>
